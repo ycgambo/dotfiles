@@ -49,7 +49,7 @@ TRAPHUP() {
 }
 
 alias ae='vim $yadr/zsh/aliases.zsh' #alias edit
-alias ar='source $yadr/zsh/aliases.zsh'  #alias reload
+alias ar='source $yadr/zsh/aliases.zsh;source ~/.zshrc'  #alias reload
 alias gar="killall -HUP -u \"$USER\" zsh"  #global alias reload
 
 # vim using
@@ -211,3 +211,23 @@ alias dbmu='spring rake db:migrate:up'
 
 # Homebrew
 alias brewu='brew update && brew upgrade && brew cleanup && brew doctor'
+
+# Docker
+alias dce='docker-compose exec'
+alias dcd='docker-compose down'
+alias dcu='docker-compose up'
+alias dcud='docker-compose up -d'
+
+# Kubernetes
+alias k='kubectl'
+alias ke='kubectl exec'
+alias kg='kubectl get'
+alias kgd='kubectl get deployments'
+alias kaf='kubectl apply -f'
+alias kgn='kubectl get namespaces'
+alias kgp='kubectl get pods'
+alias kgs='kubectl get services'
+
+alias top='htop'
+alias watch='watch -t '
+alias artisan='php artisan'
